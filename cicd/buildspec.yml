@@ -7,7 +7,7 @@ phases:
       - export COMMIT_ID=${CODEBUILD_RESOLVED_SOURCE_VERSION}
       # ECRへのログイン
       - echo Logging in to Amazon ECR
-      - aws ecr get-login-password --region $AWS_DEFAULT_REGION | docker login --username AWS --password-stdin $AWS_ACCOUNT_ID.dkr.ecr.$AWS_DEFAULT_REGION.amazonaws.com
+      - $(aws ecr get-login --region $AWS_DEFAULT_REGION --no-include-email
       # ECRリポジトリ指定（dev環境ではおそらくbuild環境で環境変数登録されているため不要）
       - export IMAGE_REPO_URL1="168602217529.dkr.ecr.ap-northeast-1.amazonaws.com/smcc-batch-test-repository"
       # taskdefの場所指定
