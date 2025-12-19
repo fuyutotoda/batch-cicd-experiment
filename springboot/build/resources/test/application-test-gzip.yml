@@ -1,0 +1,35 @@
+spring:
+  cloud:
+    aws:
+      region:
+        static: ap-northeast-1
+
+  profiles:
+    group:
+      test-gzip: test-gzip
+  application:
+    name: shinsoubatch
+  datasource:
+    url: jdbc:postgresql://localhost:5432/ssk?currentSchema=local
+    username: admin
+    password: CHANGEME
+    driver-class-name: org.postgresql.Driver
+  batch:
+    jdbc:
+      initialize-schema: never
+    job:
+      enabled: false
+
+mybatis:
+  mapper-locations: classpath:mapper/*.xml
+s3:
+  batch-s3-bucket: test-bucket
+  file-root-path: C:/batch_work/
+  secret: password
+  endpoint: http://localhost:9000
+logging:
+  level:
+    root: INFO
+  file:
+    name: logs/app.log
+

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="jp.co.shinsoubatch.playGround.FeaturesCsvDtoTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2025-12-15T13:13:37.011Z" hostname="CCT2306-021" time="2.92">
+  <properties/>
+  <testcase name="null値ありのCSV書き込み_クォート自動設定" classname="jp.co.shinsoubatch.playGround.FeaturesCsvDtoTest" time="2.92"/>
+  <system-out><![CDATA[22:13:26.201 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [jp.co.shinsoubatch.playGround.FeaturesCsvDtoTest]: FeaturesCsvDtoTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+22:13:26.516 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration jp.co.shinsoubatch.ShinsouBatchApplication for test class jp.co.shinsoubatch.playGround.FeaturesCsvDtoTest
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.5.7)
+
+2025-12-15 22:13:28 [Test worker] INFO  j.c.s.playGround.FeaturesCsvDtoTest - Starting FeaturesCsvDtoTest using Java 25.0.1 with PID 44280 (started by fuyutotoda in C:\Users\fuyutotoda\Local_Works\SMCC\app-batch\app-batch\springboot)
+2025-12-15 22:13:28 [Test worker] INFO  j.c.s.playGround.FeaturesCsvDtoTest - No active profile set, falling back to 1 default profile: "default"
+2025-12-15 22:13:30 [Test worker] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-12-15 22:13:31 [Test worker] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@250d440
+2025-12-15 22:13:31 [Test worker] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-12-15 22:13:36 [Test worker] INFO  j.c.s.playGround.FeaturesCsvDtoTest - Started FeaturesCsvDtoTest in 9.956 seconds (process running for 13.607)
+"feature_id","title","title2","icon_type","priority","start_date","end_date","is_deleted","created_at","updated_at","created_by","updated_by"
+"oyOKTWEeHaFANh1WJ1FJlfAV7UikSerWI","通常レコード","タイトル2","001",1,"2025-12-15 17:03:00","2025-12-15 17:03:00",/N,"2025-12-15 17:03:00","2025-12-15 17:03:00","BATCH003","BATCH003"
+"QRKyHx6pWCk0P3UEkaM4i6FOdio6MWoGE","priority(数値)がnull","タイトル2","001",/N,"2025-12-15 17:03:00","2025-12-15 17:03:00",/N,"2025-12-15 17:03:00","2025-12-15 17:03:00","BATCH003","BATCH003"
+"Zji3k2A4HbdE4fslY46WPxun2qXCFEDxf","title2(文字列) がnull",/N,"001",1,"2025-12-15 17:03:00","2025-12-15 17:03:00",/N,"2025-12-15 17:03:00","2025-12-15 17:03:00","BATCH003","BATCH003"
+
+]]></system-out>
+  <system-err><![CDATA[Mockito is currently self-attaching to enable the inline-mock-maker. This will no longer work in future releases of the JDK. Please add Mockito as an agent to your build as described in Mockito's documentation: https://javadoc.io/doc/org.mockito/mockito-core/latest/org.mockito/org/mockito/Mockito.html#0.3
+WARNING: A Java agent has been loaded dynamically (C:\Users\fuyutotoda\.gradle\caches\modules-2\files-2.1\net.bytebuddy\byte-buddy-agent\1.17.8\f09415827a71be7ed621c7bd02550678f28bc81c\byte-buddy-agent-1.17.8.jar)
+WARNING: If a serviceability tool is in use, please run with -XX:+EnableDynamicAgentLoading to hide this warning
+WARNING: If a serviceability tool is not in use, please run with -Djdk.instrument.traceUsage for more information
+WARNING: Dynamic loading of agents will be disallowed by default in a future release
+]]></system-err>
+</testsuite>

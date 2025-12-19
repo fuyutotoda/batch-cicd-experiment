@@ -1,0 +1,1 @@
+truncate local.features CASCADE;

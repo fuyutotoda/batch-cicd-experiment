@@ -1,0 +1,68 @@
+{
+    "containerDefinitions": [
+        {
+            "cpu": 0,
+            "environment": [],
+            "essential": true,
+            "firelensConfiguration": {
+                "options": {
+                    "enable-ecs-log-metadata": "true"
+                },
+                "type": "fluentbit"
+            },
+            "image": "public.ecr.aws/aws-observability/aws-for-fluent-bit:stable",
+            "logConfiguration": {
+                "logDriver": "awslogs",
+                "options": {
+                    "awslogs-group": "cwlg-chb-ssk-batch-d-jpe-001",
+                    "awslogs-region": "ap-northeast-1",
+                    "awslogs-stream-prefix": "log_router-"
+                }
+            },
+            "memoryReservation": 51,
+            "mountPoints": [],
+            "name": "log_router",
+            "portMappings": [],
+            "systemControls": [],
+            "user": "0",
+            "volumesFrom": []
+        },
+        {
+            "command": [],
+            "cpu": 0,
+            "environment": [],
+            "essential": true,
+            "image": "<IMAGE1_NAME>",
+            "logConfiguration": {
+                "logDriver": "awsfirelens",
+                "options": {
+                    "log_group_name": "cwlg-chb-ssk-batch-d-jpe-001",
+                    "log_stream_name": "backend-",
+                    "region": "ap-northeast-1",
+                    "Name": "cloudwatch_logs"
+                }
+            },
+            "memory": 512,
+            "mountPoints": [],
+            "name": "batch",
+            "portMappings": [],
+            "systemControls": [],
+            "volumesFrom": []
+        }
+    ],
+    "cpu": "256",
+    "executionRoleArn": "arn:aws:iam::168602217529:role/smcc-batch-test-task-execution-role",
+    "family": "task-chb-ssk-batch-d-jpe-001",
+    "memory": "512",
+    "networkMode": "awsvpc",
+    "placementConstraints": [],
+    "requiresCompatibilities": [
+        "FARGATE"
+    ],
+    "runtimePlatform": {
+        "cpuArchitecture": "X86_64",
+        "operatingSystemFamily": "LINUX"
+    },
+    "taskRoleArn": "arn:aws:iam::168602217529:role/smcc-batch-test-task-execution-role",
+    "volumes": []
+}

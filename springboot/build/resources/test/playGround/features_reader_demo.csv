@@ -1,0 +1,6 @@
+﻿"feature_id","title","title2","icon_type","priority","start_date","end_date","is_deleted","created_at","updated_at","created_by","updated_by"
+"oyOKTWEeHaFANh1WJ1FJlfAV7UikSerWI","通常レコード","タイトル2","001",1,"2025-12-15 17:03:00","2025-12-15 17:03:00",true,"2025-12-15 17:03:00","2025-12-15 17:03:00","BATCH003","BATCH003"
+"QRKyHx6pWCk0P3UEkaM4i6FOdio6MWoGE","priority(数値)が/N_ダブルクォートなし","タイトル2","001",/N,"2025-12-15 17:03:00","2025-12-15 17:03:00",true,"2025-12-15 17:03:00","2025-12-15 17:03:00","BATCH003","BATCH003"
+"NJ1eqUjkxh8LnZVEkbgZAiyHmgywj1rZ4","priority (数値) が/N_ダブルクォート付き","タイトル2","001","/N","2025-12-15 17:03:00","2025-12-15 17:03:00",true,"2025-12-15 17:03:00","2025-12-15 17:03:00","BATCH003","BATCH003"
+"Zji3k2A4HbdE4fslY46WPxun2qXCFEDxf","title2(文字列) が/N_ダブルクォートなし",/N,"001",1,"2025-12-15 17:03:00","2025-12-15 17:03:00",true,"2025-12-15 17:03:00","2025-12-15 17:03:00","BATCH003","BATCH003"
+"NgAPLAMhghV2qpgWkvhFrOvyisY0BgFAQ","title2(文字列) が/N_ダブルクォート付き","/N","001",1,"2025-12-15 17:03:00","2025-12-15 17:03:00",true,"2025-12-15 17:03:00","2025-12-15 17:03:00","BATCH003","BATCH003"
